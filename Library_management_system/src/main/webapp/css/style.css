@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif
+}
+/* 
+html{
+    font-size: 62.5%;
+} */
+.content h1
+ {
+     font-size: 30px;
+     color: rgb(42, 25, 192);
+     font-weight: 500;
+ }
+.contact
+{
+  position:relative;
+  min-height: 100vh ;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: gold;
+  /* background-image: url(https://images.pexels.com/photos/1323550/pexels-photo-1323550.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500); */
+  background-size: cover;
+
+}
+
+.contact .main{
+    max-width: 800px;
+    text-align: center;
+}
+
+.main
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;  
+}
+
+.login .inputBox
+ {
+     position: relative;
+   width:100%;
+   margin-top: 10px;
+ }
+ .login .inputBox input,
+ .login .inputBox textarea
+ {
+     width: 100%;
+     padding: 5px 0;
+     font-size: 16px;
+     margin: 10px 0;
+     border: none;
+     border-bottom: 2px solid #333;
+     outline: none;
+     resize: none;
+ }
+
+.login .option select{
+    width: 40%;
+    font-size: 1em;
+}
+
+/* .login #Sex #Martial_Status select{
+    width:20px;
+    font-size: 0.8em;
+} */
+ .login .inputBox span{
+     position: absolute;
+     left:0;
+     padding: 5px 0;
+     font-size: 16px;
+     margin: 10px 0;
+     pointer-events: none;
+     transition: 0.5s;
+     color: #666;
+
+ }
+
+ .non_box{
+    font-size: 16px;
+    color: #666;
+ }
+ .login .inputBox input:focus ~ span,
+ .login .inputBox input:valid ~ span,
+ .login .inputBox textarea:focus ~ span,
+ .login .inputBox textarea:valid ~ span
+ {
+     color: #e91263;
+     font-size: 12px;
+     transform: translateY(-20px);
+ }
+ .login .inputBox input[type="submit"]
+ {
+   width: 100px;
+   background: #00bcd4;
+   color:#fff;
+   border:none;
+   cursor: pointer; 
+   padding: 10px;
+   font-size: 18px; 
+
+ }
+ @media (max-width: 991px)
+ {
+     
+     .main{
+         flex-direction: column;
+
+     }
+     .main {
+         margin-bottom: 40px;
+
+     }
+     .main ,
+     .login
+     {
+         width: 100%;
+     }
+}
